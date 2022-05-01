@@ -696,6 +696,10 @@ ul, ol {
 } 
 
 /*cards*/
+.cards-link {
+    display: block;
+}
+
 .cards-list {
     list-style: none;
     display: flex;
@@ -721,7 +725,8 @@ ul, ol {
      rgba(0, 0, 0, 0.12), 0px 1px 1px 
      rgba(0, 0, 0, 0.14), 0px 2px 1px 
      rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -756,7 +761,7 @@ ul, ol {
 .cards-items-image-overlay {
     
     position: absolute;
-    background-color: rgba(33, 150, 243, 0.9);
+    background-color: var(--main-color);
     top: 0;
     left: 0;
     width: 100%;
