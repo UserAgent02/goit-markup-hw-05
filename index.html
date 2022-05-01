@@ -47,7 +47,7 @@
         <div class="container">
             <div class="hero-contant">
                 <h1 class="bg-head-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="bg-head-btn" type="button">Заказать услугу</button>
+                <button class="bg-head-btn" type="button" data-modal-open>Заказать услугу</button>
                 
             </div>
         </div>
@@ -95,9 +95,25 @@
         <div class="container">
             <h2 class="work-title">Чем мы занимаемся</h2>
             <ul class="work-list">
-                <li class="work-items"><img src="./images/box1.jpg" alt="услуга1" width="370" height="294"></li>
-                <li class="work-items"><img src="./images/box2.jpg" alt="услуга2" width="370" height="294"></li>
-                <li class="work-items"><img src="./images/box3.jpg" alt="услуга3" width="370" height="294"></li>
+                <li class="work-items">
+                    <img src="./images/box1.jpg" alt="услуга1" width="370" height="294">
+                    <div class="work-items-overlay">
+                        <p class="work-items-overlay-text"> Десктопоне приложение</p>
+                    </div>
+                
+                </li>
+                <li class="work-items">
+                    <img src="./images/box2.jpg" alt="услуга2" width="370" height="294">
+                    <div class="work-items-overlay">
+                        <p class="work-items-overlay-text"> Десктопоне приложение</p>
+                    </div>
+                </li>
+                <li class="work-items">
+                    <img src="./images/box3.jpg" alt="услуга3" width="370" height="294">
+                    <div class="work-items-overlay">
+                        <p class="work-items-overlay-text"> Десктопоне приложение</p>
+                    </div>
+                </li>
             </ul>
         </div>
     </section>
@@ -315,6 +331,25 @@
         </div>
     </div>
   </footer>
+
+
+<!--затемнение-->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button  type="button" class="modal-close-btn" data-modal-close>
+            <svg class="modal-close-btn-icon">
+                <use href="images/symbol-defs.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+
+
+</div>
+
+
+
+  <!--modal-->
+  <script src="./js/modal.js"></script>
 </body>
 </html>
 <!--test comment 1-->
